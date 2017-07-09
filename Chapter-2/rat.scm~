@@ -1,0 +1,23 @@
+#lang racket
+
+
+(define (make-rat n d) (cons n d))
+(define (number x) (car x))
+(define (denom x) (cdr x))
+(define num (make-rat 3 5))
+(number num)
+(denom num)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

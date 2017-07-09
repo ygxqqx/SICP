@@ -1,0 +1,12 @@
+#lang racket
+
+
+(define (list-ref items n)
+  (if (= n 0)
+      (car items)
+      (list-ref (cdr items) (- n 1))))
+
+(define squares (list 1 4 2 7 99 44 0))
+
+(list-ref squares 6)
+
