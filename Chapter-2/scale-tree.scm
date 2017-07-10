@@ -1,0 +1,15 @@
+#lang racket
+
+
+(define (scale-tree tree factor)
+  (cond ((null? tree) null)
+        ((not (pair? tree)) (* tree factor))
+        (else (cons (scale-tree (car tree) factor)
+                    (scale-tree (cdr tree) factor)))))
+
+
+(scale-tree (list 1 (list 2 (list 8 2) 3) 5) 10)
+
+
+
+
